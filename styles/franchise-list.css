@@ -1,0 +1,14 @@
+/* Cleaned franchise-list styles */
+
+.franchise-list {
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 12px;
+    height: auto;
+    min-height: 120px;
+    overflow-y: auto;
+}
+
+.franchise-list-container {
+    margin-bottom: 12px;
+}

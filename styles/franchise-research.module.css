@@ -1,0 +1,116 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  font-family: Arial, sans-serif;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.topSection {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.topLeftBox {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.imageBox {
+  width: 160px;
+  height: 80px;
+  background: #ddd;
+  border-radius: 6px;
+}
+
+.topMiddleBox {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.list {
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-left: 18px;
+}
+
+.readMore {
+  font-size: 13px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.topRightBox {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.sidebarItem {
+  background: #eee;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 24px;
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gridImage {
+  width: 100%;
+  aspect-ratio: 1.5 / 1;
+  background: #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.gridText {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1024px) {
+  .gridSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .topSection {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridSection {
+    grid-template-columns: 1fr;
+    gap: 20px 0;
+  }
+  .container {
+    padding: 16px 4px;
+  }
+}
